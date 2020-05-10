@@ -1,0 +1,12 @@
+.ColorSettings-Title {
+  margin: 0% 2%;
+}
+
+.ColorSettings-Section {
+  display: flex;
+  align-self: flex-start;
+}
+
+.ColorSettings-Section {
+  font-size: small;
+}

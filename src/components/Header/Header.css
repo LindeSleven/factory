@@ -1,0 +1,32 @@
+.jumbotron {
+  background-color: #d84727;
+  color: #d7eef4;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 0.15em;
+  padding: 0.15em;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header-colorsettings {
+  flex: 1;
+}
+
+.container::after {
+  content: "";
+  flex: 1;
+}
+
+.container i {
+  font-size: 2em;
+  padding: 0.15em;
+  margin-left: 0.25em;
+  color: #d7eef4;
+}
