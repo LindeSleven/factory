@@ -1,0 +1,92 @@
+{
+  "naam": "Hal3",
+  "oppervlakte": "200",
+  "aantalApparaten": "1",
+  "aantalActies": "3",
+  "height": 230,
+  "width": 650,
+  "top": 170,
+  "left": 350,
+  "apparaten": [
+    {
+      "ID": "301",
+      "categorie": "machine",
+      "naam": "UP4",
+      "height": 70,
+      "width": 150,
+      "top": 20,
+      "left": 450,
+      "omschrijving": "ultra",
+      "laatstUitgevoerdeActie": {
+        "datum": "2020-01-02",
+        "type": "vervanging",
+        "omschrijving": "vervanging riem"
+      },
+      "volgendeActie": {
+        "datum": "2020-03-16",
+        "type": "nazicht",
+        "omschrijving": "nazicht"
+      }
+    },
+    {
+      "ID": "302",
+      "categorie": "machine",
+      "naam": "UP6",
+      "height": 70,
+      "width": 150,
+      "top": 70,
+      "left": 50,
+      "omschrijving": "normaal",
+      "laatstUitgevoerdeActie": {
+        "datum": "2020-03-01",
+        "type": "vervanging",
+        "omschrijving": "vervanging riem"
+      },
+      "volgendeActie": {
+        "datum": "2020-03-17",
+        "type": "nazicht",
+        "omschrijving": "nazicht"
+      }
+    },
+    {
+      "ID": "321",
+      "categorie": "lamp",
+      "naam": "lamphal3",
+      "height": 25,
+      "width": 25,
+      "top": 140,
+      "left": 430,
+      "omschrijving": "lamp",
+      "laatstUitgevoerdeActie": {
+        "datum": "2020-02-15",
+        "type": "vervanging",
+        "omschrijving": "vervanging"
+      },
+      "volgendeActie": {
+        "datum": "2030-02-15",
+        "type": "vervanging",
+        "omschrijving": "vervanging LED"
+      }
+    },
+    {
+      "ID": "331",
+      "height": 7,
+      "width": 250,
+      "top": 80,
+      "left": 200,
+      "categorie": "band",
+      "naam": "bandUP4",
+      "omschrijving": "band van UP4 naar UP6",
+      "laatstUitgevoerdeActie": {
+        "datum": "2020-02-01",
+        "type": "nazicht",
+        "omschrijving": "nazicht"
+      },
+      "volgendeActie": {
+        "datum": "2020-03-20",
+        "type": "nazicht",
+        "omschrijving": "nazicht"
+      }
+    }
+  ]
+}

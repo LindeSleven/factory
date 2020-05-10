@@ -15,7 +15,7 @@ class App extends React.Component {
       isLoading: true,
       help: false,
       hallen: [],
-      helpIndividual: []
+      helpIndividual: [],
     };
     this.handleToggleClick = this.handleToggleClick.bind(this);
     this.onHelpIndividual = this.onHelpIndividual.bind(this);
@@ -23,28 +23,30 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const res = await axios.get("http://localhost:3000/hallen.json");
+    const res = await axios.get(
+      "https://factory.lindesleven.now.sh/hallen.json"
+    );
     let data = res.data.hallen;
     this.setState({
       isLoading: false,
       hallen: data,
-      helpIndividual: new Array(data.length).fill(false)
+      helpIndividual: new Array(data.length).fill(false),
     });
   }
 
   handleToggleClick = () => {
     this.setState({
-      lijstView: !this.state.lijstView
+      lijstView: !this.state.lijstView,
     });
   };
 
   handleHelp = () => {
     this.setState({
-      help: !this.state.help
+      help: !this.state.help,
     });
   };
 
-  onHelpIndividual = index => {
+  onHelpIndividual = (index) => {
     let listWithHelpStates = this.state.helpIndividual;
     listWithHelpStates[index] = !listWithHelpStates[index];
     this.setState({ helpIndividual: listWithHelpStates });
@@ -83,7 +85,7 @@ class App extends React.Component {
     return (
       <div
         style={{
-          color: this.state.tekstKleur
+          color: this.state.tekstKleur,
         }}
       >
         <Header onChangeColor={this.handleChangeColor} />
